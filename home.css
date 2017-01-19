@@ -1,0 +1,502 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/QHD8zigcbDB8aPfIoaupKOvvDin1pK8aKteLpeZ5c0A.ttf) format('truetype');
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: rgb(240, 240, 240);
+}
+div.tabmenu {
+  padding: 15px 0 0 50px;
+  background-color: #ffb74a;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 130px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.67);
+  font-family: "Roboto", sans-serif;
+  z-index: 10;
+}
+div.tabmenu span#header {
+  display: block;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 50px;
+  font-weight: 100;
+}
+div.tabmenu div#tab {
+  margin: -35px 0 0 58%;
+  display: block;
+  font-weight: 400;
+  font-size: 25px;
+}
+div.tabmenu div#tab a {
+  margin: 0 0 0 20px;
+  display: inline-block;
+  height: 1.6em;
+  color: rgba(0, 0, 0, 0.7);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 0 0 2px 0;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+div.tabmenu div#tab a:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+div.tabmenu div#tab a: {
+  border-color: rgba(0, 0, 255, 1);
+}
+div.tabmenu span#footer {
+  margin: -8px 0 0 -20px;
+  display: block;
+  color: rgba(0, 0, 0, 0.76);
+  font-weight: 300;
+  font-size: 60px;
+}
+div.contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+div.contents div#tab1 {
+  margin: -50px -10px 0 -10px;
+  padding: 150px 0 0 10px;
+  display: block;
+  height: 1200px;
+}
+div.contents div#tab2 {
+  margin: -50px -10px 0 -10px;
+  padding: 150px 0 0 10px;
+  display: block;
+  height: 1200px;
+}
+div.contents div#tab3 {
+  margin: -50px -10px 0 -10px;
+  padding: 150px 0 0 10px;
+  display: block;
+  height: 1200px;
+}
+div.contents div#tab4 {
+  margin: -50px -10px 0 -10px;
+  padding: 150px 0 0 10px;
+  display: block;
+  height: 1200px;
+}
+div#tab1 div#introduction {
+  display: inline-block;
+  margin: 0 0 0 -50px;
+  padding: 200px 0 0 50px;
+  position: absolute;
+  width: 50%;
+  height: 350px;
+  background-color: rgb(152, 214, 217);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  z-index: 0;
+}
+div#tab1 div#introduction:hover {
+  background-color: rgb(169, 224, 226);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+div#tab1 div#introduction p.title {
+  display: block;
+  margin: -150px 0 0 -100px;
+  padding: 150px 0 50px 130px;
+  font-weight: 100;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.75);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+div#tab1 div#introduction p.title:hover {
+  font-size: 60px;
+}
+div#tab1 div#introduction ul {
+  display: block;
+  margin: 0 0 0 -100px;
+  padding: 120px 0 0 140px;
+  height: 130px;
+  list-style-type: none;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+div#tab1 div#introduction ul:hover {
+  overflow: visible;
+  height: 230px;
+  margin: -100px 0 0 -100px;
+  color: rgba(0, 0, 0, 0.9);
+}
+div#tab1 div#education {
+  display: inline-block;
+  position: absolute;
+  padding: 200px 0 0 30px;
+  margin: 0 0 0 50%;
+  width: 50%;
+  height: 350px;
+  background-color: rgb(145, 209, 81);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  z-index: 0;
+}
+div#tab1 div#education:hover {
+  background-color: rgb(156, 217, 94);
+  box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+div#tab1 div#education p.title {
+  display: block;
+  margin: -100px 0 0 -100px;
+  padding: 100px 0 50px 100px;
+  font-weight: 100;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.75);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+div#tab1 div#education p.title:hover {
+  font-size: 60px;
+}
+div#tab1 div#education table {
+  display: block;
+  margin: -70px 0 0 -100px;
+  padding: 70px 0 0 140px;
+  height: 250px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+div#tab1 div#education table:hover {
+  overflow: visible;
+  height: 280px;
+  margin: -100px 0 0 -100px;
+  color: rgba(0, 0, 0, 0.9);
+}
+div#tab1 div#education td {
+  width: 100px;
+}
+div#tab1 div#education td.school {
+  width: 250px;
+}
+div#tab1 div#hobby {
+  display: inline-block;
+  position: absolute;
+  margin: 550px 0 0 0;
+  padding: 0 0 0 30px;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(230, 91, 103);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  z-index: 0;
+}
+div#tab1 div#hobby:hover {
+  background-color: rgb(255, 103, 117);
+  box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+div#tab1 div#hobby p.title {
+  display: block;
+  margin: 0 0 0 -100px;
+  padding: 150px 0 50px 240px;
+  font-weight: 100;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.75);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+div#tab1 div#hobby p.title:hover {
+  font-size: 60px;
+}
+div#tab1 div#hobby p.sentence {
+  display: block;
+  margin: 0 0 0 -100px;
+  padding: 50px 0 0 300px;
+  height: 250px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.0);
+  font-size: 17px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+div#tab1 div#hobby p.sentence:hover {
+  overflow: visible;
+  height: 280px;
+  margin: -50px 0 0 -100px;
+  color: rgba(0, 0, 0, 0.9);
+}
+div#tab1 p.footer {
+  color: rgb(0, 0, 0, 0.8);
+  margin: 1060px 0 0 100px;
+}
+div#tab2 div#header p.title {
+  display: inline-block;
+  margin: -100px 0 0 0;
+  padding: 150px 0 0 50px;
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  background-color: rgb(83, 112, 131);
+  z-index: 0;
+  font-weight: 100;
+  font-size: 60px;
+  color: rgb(240, 240, 240);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  z-index: 0;
+}
+div#tab2 div#header p.title:hover {
+  background-color: rgb(90, 120, 140);
+  font-size: 60px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+div#tab2 div#header img {
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 50px 100px 20px 600px;
+  display: inline-block;
+  z-index: 2;
+  opacity: 0.0;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+div#tab2 div#header img:hover {
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 50px 100px 20px 600px;
+  display: inline-block;
+  opacity: 1.0;
+}
+div#tab2 div#details {
+  position: absolute;
+  margin: 380px 0 0 0;
+  padding: 100px 0 0 150px;
+  width: 100%;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+div#tab2 div#details p {
+  padding: 0 0 0 0;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 40px;
+}
+div#tab2 div#details ul {
+  list-style-type: none;
+  padding: 0 0 0 80px;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+div#tab2 div#explanation {
+  position: absolute;
+  margin: 580px 0 0 0;
+  padding: 100px 0 0 150px;
+  width: 100%;
+  display: inline-block;
+  z-index: 0;
+}
+div#tab2 div#explanation p.title {
+  padding: 0 0 0 0;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 40px;
+}
+div#tab2 div#explanation p.sentence {
+  padding: 0 0 0 80px;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+div#tab2 hr {
+  margin: 1000px 0 0 0;
+}
+div#tab2 p.footer {
+  color: rgb(0, 0, 0, 0.8);
+  margin: 10px 0 0 100px;
+}
+div#tab3 div#header p.title {
+  display: inline-block;
+  margin: -100px 0 0 0;
+  padding: 150px 0 0 50px;
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  background-color: rgb(50, 138, 231);
+  z-index: 0;
+  font-weight: 100;
+  font-size: 60px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  z-index: 0;
+  color: rgba(0, 0, 0, 0.75);
+}
+div#tab3 div#header img {
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 50px 100px 20px 600px;
+  display: inline-block;
+  z-index: 2;
+  opacity: 0.0;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+div#tab3 div#header img:hover {
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 50px 100px 20px 600px;
+  display: inline-block;
+  opacity: 1.0;
+}
+div#tab3 div#details {
+  color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  margin: 380px 0 0 0;
+  padding: 100px 0 0 150px;
+  width: 100%;
+  display: inline-block;
+  z-index: 0;
+}
+div#tab3 div#details p {
+  padding: 0 0 0 0;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 40px;
+}
+div#tab3 div#details ul {
+  list-style-type: none;
+  padding: 0 0 0 80px;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+div#tab3 div#explanation {
+  position: absolute;
+  margin: 580px 0 0 0;
+  padding: 100px 0 0 150px;
+  width: 100%;
+  display: inline-block;
+  z-index: 0;
+}
+div#tab3 div#explanation p.title {
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 0;
+  font-size: 40px;
+}
+div#tab3 div#explanation p.sentence {
+  padding: 0 0 0 80px;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+div#tab3 hr {
+  margin: 1000px 0 0 0;
+}
+div#tab3 p.footer {
+  color: rgb(0, 0, 0, 0.8);
+  margin: 10px 0 0 100px;
+}
+div#tab4 div#header p.title {
+  display: inline-block;
+  margin: -100px 0 0 0;
+  padding: 150px 0 0 50px;
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  background-color: rgb(235, 80, 46);
+  z-index: 0;
+  font-weight: 100;
+  font-size: 60px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  z-index: 0;
+  color: rgba(0, 0, 0, 0.75);
+}
+div#tab4 div#header img {
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 30px 100px 30px 750px;
+  display: inline-block;
+  z-index: 1;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  opacity: 0.0;
+}
+div#tab4 div#header img:hover {
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 30px 100px 30px 750px;
+  display: inline-block;
+  opacity: 1.0;
+}
+div#tab4 div#details {
+  color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  margin: 380px 0 0 0;
+  padding: 100px 0 0 150px;
+  width: 100%;
+  display: inline-block;
+  z-index: 0;
+}
+div#tab4 div#details p {
+  padding: 0 0 0 0;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 40px;
+}
+div#tab4 div#details ul {
+  list-style-type: none;
+  padding: 0 0 0 80px;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+div#tab4 div#explanation {
+  position: absolute;
+  margin: 580px 0 0 0;
+  padding: 100px 0 0 150px;
+  width: 100%;
+  display: inline-block;
+  z-index: 0;
+}
+div#tab4 div#explanation p.title {
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 0;
+  font-size: 40px;
+}
+div#tab4 div#explanation p.sentence {
+  padding: 0 0 0 80px;
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+div#tab4 hr {
+  margin: 1000px 0 0 0;
+}
+div#tab4 p.footer {
+  color: rgb(0, 0, 0, 0.8);
+  margin: 10px 0 0 100px;
+}
